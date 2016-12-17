@@ -3,13 +3,19 @@
    <script src="https://www.puck-js.com/puck.js"></script>
  </head>
  <body>
+  <script type="text/javascript">
+   var leds=document.querySelectorAll("path");
+   led[0] = "ledR";
+   led[1] = "ledG";
+   led[2] = "ledB";
+  </script>
   <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-    <path id="led1" fill="#770000" d="M12,2A7,7 0 0,0 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9A7,7 0 0,0 12,2M9,21A1,1 0 0,0 10,22H14A1,1 0 0,0 15,21V20H9V21Z" />
+    <path id="ledR" fill="#770000" d="M12,2A7,7 0 0,0 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9A7,7 0 0,0 12,2M9,21A1,1 0 0,0 10,22H14A1,1 0 0,0 15,21V20H9V21Z" />
   </svg>
   <script type="text/javascript">
     // Get the actual curve inside the SVG. You could make differemt
     // parts of a more complex SVG do different things...
-    var path = document.getElementsByID("led1")[0];
+    var path = document.getElementsByID("ledR")[0];
     // Make sure your mouse cursor turns into a hand when over it, and gray it out
     path.style="cursor:pointer;fill:#BBB";
     // Now send commands to turn the LED on or off
